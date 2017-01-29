@@ -85,6 +85,37 @@
                 <p>Большинство едет в гранд-каньон и толпятся там</p>
             </div>
         </section>
+      <p>Заинтересовались?
+      Укажите пердполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <div class="search-modal">
+        <form action="/echo" method="get">
+          <fieldset>
+            <legend>Поиск гостиницы</legend>
+            <div class="form-date-in">
+              <label for="day-in">Дата заезда</label>
+              <input type="number" min="1" max="31" id="day-in" name="day-in" value="24">
+              <label for="month-in"></label>
+              <input type="month"  id="month-in" name="month-in" value="2017-04">
+            </div>
+<!-- их оборачивать раздельно?-->
+            <div class="form-date-out">
+              <label for="day-out">Дата заезда</label>
+              <input type="number" min="1" max="31" id="day-out" name="day-out" value="4">
+              <label for="month-out"></label>
+              <input type="month"  id="month-out" name="month-out" value="2017-07">
+            </div>
+            <div class="form-human">
+              <label for="amount-parents">Взрослые</label>
+              <input type="number" name="amount-parents" id="amount-parents" min="1" max="10" step="1" value="2">
+              <label for="amount-child">Дети</label>
+              <input type="number" name="amount-child" id="amount-child" min="0" max="20" step="1" value="0">
+            </div>
+            <div class="search-btn">
+                    <input type="submit" value="Найти">
+                </div>
+          </fieldset>
+        </form>
+      </div>
         <div class="index-map">Карта</div>
     </main>
     <footer class="main-footer">
