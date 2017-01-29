@@ -27,20 +27,19 @@
         <div class="header-logo">
             <img src="http://placehold.it/150x100" width="10" height="10" alt="city of «sedona»"><a href="#">Логотип</a>
         </div>
-
-    <div class="form-item">
-        <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-                <legend>Инфраструктура</legend>
-                <label for="pool">Бассейн</label>
-                <input type="radio" id="pool" name="pool" value="pool">
-                <label for="parking">Паркинг</label>
-                <input type="radio" id="parking" name="parking" value="parking">
-                <label for="wifi">WI-FI</label>
-                <input type="radio" id="wifi" name="wifi" value="wifi">
-            </fieldset>
-        </form>
-    </div>
+        <div class="form-item">
+            <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <label for="pool">Бассейн</label>
+                    <input type="radio" id="pool" name="pool" value="pool">
+                    <label for="parking">Паркинг</label>
+                    <input type="radio" id="parking" name="parking" value="parking">
+                    <label for="wifi">WI-FI</label>
+                    <input type="radio" id="wifi" name="wifi" value="wifi">
+                </fieldset>
+            </form>
+        </div>
         <div class="form-item">
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
@@ -54,31 +53,93 @@
                 </fieldset>
             </form>
         </div>
-        <div class="form-item">
+        <div class="form-item"> <!--ДУмаю еще два инпута надо вставить, но не уверен-->
             <form action="https://echo.htmlacademy.ru" method="get">
-                    <label for="pricing">Стоимость в сутки</label>
-                    от 0 до 3000
-                    <input type="range" id="pricing" name="pricing" value="pricing" min="0" max="3000">
+                <label for="pricing">Стоимость в сутки</label>
+                от 0 до 3000
+                <input type="range" id="pricing" name="pricing" value="0" min="0" max="3000">
                 <div class="form-btn">
                     <input type="submit" value="Показать">
                 </div>
             </form>
         </div>
+        <!--Сортировка гостиниц ссылками-->
+        <div class="sorting">
+            Найдено:3 сортировка:
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по рейтингу</a>
+            <!--две стрелочки верх вниз это какие элементы?-->
+        </div>
+        <div class="listing">
+            <ul class="list-item">
+                <li>
+                    <div class="accommodation-item">
+                        <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                        <div class="item-info">
+                            <div class="item-rating">
+                                <img alt="1" src="http://placehold.it/150x100" title="superb">
+                                <img alt="2" src="http://placehold.it/150x100" title="superb">
+                                <img alt="3" src="http://placehold.it/150x100" title="superb">
+                                <img alt="4" src="http://placehold.it/150x100" title="superb"> Рейтинг: 8,5
+                            </div>
+                            <div class="item-name"><a href="#">Amara Resort & Spa</a></div>
+                            <p>Гостиница от 4000 Р.</p>
+                        </div>
+                        <a class="item-info-btn" href="#">Подробнее</a>
+                        <a class="item-book-btn" href="#">Забронировать</a>
+                    </div>
+                </li>
+                <li>
+                  <div class="accommodation-item">
+                        <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                        <div class="item-info">
+                            <div class="item-rating">
+                                <img alt="1" src="http://placehold.it/150x100" title="superb">
+                                <img alt="2" src="http://placehold.it/150x100" title="superb">
+                                <img alt="3" src="http://placehold.it/150x100" title="superb">
+                                 Рейтинг: 8,9
+                            </div>
+                            <div class="item-name"><a href="#">Desert Quail inn</a></div>
+                            <p>Гостиница от 3000 Р.</p>
+                        </div>
+                        <a class="item-info-btn" href="#">Подробнее</a>
+                        <a class="item-book-btn" href="#">Забронировать</a>
+                    </div>
+                </li>
+                <li>
+                  <div class="accommodation-item">
+                        <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                        <div class="item-info">
+                            <div class="item-rating">
+                                <img alt="1" src="http://placehold.it/150x100" title="superb">
+                                <img alt="2" src="http://placehold.it/150x100" title="superb">
+                                 Рейтинг: 9,2
+                            </div>
+                            <div class="item-name"><a href="#">Villas at poco diablo</a></div>
+                            <p>Гостиница от 2000 Р.</p>
+                        </div>
+                        <a class="item-info-btn" href="#">Подробнее</a>
+                        <a class="item-book-btn" href="#">Забронировать</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="footer-contacts">#vizitsedona
-                </div>
-                <div class="footer-social">
-                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-yt" href="#">Ютуб</a>
-                </div>
-                <div class="footer-copyright">
-                    <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-                </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-contacts">#vizitsedona
             </div>
-        </footer>
+            <div class="footer-social">
+                <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+            </div>
+            <div class="footer-copyright">
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
