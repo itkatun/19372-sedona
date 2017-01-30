@@ -83,11 +83,11 @@
             </div>
         </section>
       <p>Заинтересовались?
-      Укажите пердполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <button class="search-btn" type="submit" value="search">Поиск гостиницы</button>
       <div class="search-modal">
         <form action="/echo" method="get">
           <fieldset>
-            <legend>Поиск гостиницы</legend>
             <div class="form-date-in">
               <label for="day-in">Дата заезда</label>
               <input type="number" min="1" max="31" id="day-in" name="day-in" value="24">
@@ -107,9 +107,6 @@
               <label for="amount-child">Дети</label>
               <input type="number" name="amount-child" id="amount-child" min="0" max="20" step="1" value="0">
             </div>
-            <div class="search-btn">
-                    <input type="submit" value="Найти">
-                </div>
           </fieldset>
         </form>
       </div>
