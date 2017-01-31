@@ -35,12 +35,10 @@
         <div class="intro">
             <img src="img/bg.png" width="1200" height="773" alt="центральная картинка с горами и текстом">
         </div>
-        <!-- Блок для придания обрезки центральной картинки <div></div>-->
         <div class="index-banner">
-            <p>Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+            <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </div>
-        <!--насчет нижнего блока не уверен , название не нравится и структура-->
         <div class="index-banner-item"><b>Настоящий городок</b>
             <p>- №1-</p>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -49,7 +47,6 @@
         <section class="features">
             <div class="features-item">
                 <b class="features-name">Жилье</b>
-                <!--Здесь картинку указывать в html or css?-->
                 <p>Рекомендуем пожить в настоящем мотеле. Все как в кино!</p>
             </div>
             <div class="features-item">
@@ -71,7 +68,6 @@
             <div class="features-item">
                 <b class="features-name">Небольшая площадь</b>
                 <p>-4-</p>
-                <!--сомневаюсь в данном блоке-->
                 <p>Все достопримечательности находятся очень близко</p>
             </div>
             <div class="features-item">
@@ -84,48 +80,45 @@
                 <p>Большинство едет в гранд-каньон и толпятся там</p>
             </div>
         </section>
-      <p>Заинтересовались?
-      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-<!-- корректная структура?-->    
-    <button class="search-btn" type="submit" value="search">Поиск гостиницы</button>
-      <div class="search-modal">
-        <form action="/echo" method="get">
-          <fieldset>
-            <div class="form-date-in">
-              <label for="day-in">Дата заезда</label>
-              <input type="text" id="day-in" name="day-in" value="24">
-              <label for="month-in"></label>
-              <input type="month"  id="month-in" name="month-in" value="2017-04">
-            </div>
-		<!-- их оборачивать раздельно?-->
-            <div class="form-date-out">
-              <label for="day-out">Дата отъезда</label>
-              <input type="text"  id="day-out" name="day-out" value="4">
-              <label for="month-out"></label>
-              <input type="month"  id="month-out" name="month-out" value="2017-07">
-            </div>
-            <div class="form-human">
-              <label for="amount-parents">Взрослые</label>
-              <div class="counter">
-              <input type="text" name="amount-parents" id="amount-parents"  value="2">
-				</div>            
-            </div>
-<!--ничего что два одиннаковых дива с одним классом?-->            
-				<div class="form-human">
-            <label for="amount-child">Дети</label>
-            <div class="counter">
-              <input type="text" name="amount-child" id="amount-child"  value="0">
-				</div>
-				</div>          
-          </fieldset>
-        </form>
-      </div>
+        <p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search-btn" type="submit" value="search">Поиск гостиницы</button>
+        <div class="search-modal">
+            <form action="/echo" method="get">
+                <fieldset>
+                    <div class="form-date-in">
+                        <label for="day-in">Дата заезда</label>
+                        <input type="text" id="day-in" name="day-in" value="24">
+                        <label for="month-in"></label>
+                        <input type="month" id="month-in" name="month-in" value="2017-04">
+                    </div>
+                    <div class="form-date-out">
+                        <label for="day-out">Дата отъезда</label>
+                        <input type="text" id="day-out" name="day-out" value="4">
+                        <label for="month-out"></label>
+                        <input type="month" id="month-out" name="month-out" value="2017-07">
+                    </div>
+                    <div class="form-human">
+                        <label for="amount-parents">Взрослые</label>
+                        <div class="counter">
+                            <input type="text" name="amount-parents" id="amount-parents" value="2">
+                        </div>
+                    </div>
+                    <div class="form-human">
+                        <label for="amount-child">Дети</label>
+                        <div class="counter">
+                            <input type="text" name="amount-child" id="amount-child" value="0">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
         <div class="index-map">Карта</div>
         <div id="map"></div>
     </main>
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-contacts"><p>#vizitsedona</p>
+            <div class="footer-contacts">
+                <p>#vizitsedona</p>
             </div>
             <div class="footer-social">
                 <a class="social-btn social-btn-tw" href="#">Твиттер</a>

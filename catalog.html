@@ -48,86 +48,95 @@
                     <label for="apartaments">Апартаменты</label>
                     <input type="checkbox" id="apartaments" name="apartaments" value="apartaments">
                 </fieldset>
-                <!--ДУмаю еще два инпута надо вставить, но не уверен? тип надо правльно определить-->
+                <!--заменил range, знаю что стили надо убрать в css)))-->
                 <fieldset>
                     <legend>Стоимость в сутки</legend>
-                    <label for="pricing-of">от</label>
-                    <input type="number" id="pricing-of" name="pricing-of">
-                    <label for="pricing-to">до</label>
-                    <input type="number" id="pricing-to" name="pricing-to" value="3000">
-                    <!--range придется переделать-->
-                    <div class="form-btn">
-                        <input type="submit" value="Показать">
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div style="margin-left:10px;width:150px;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle" style="left:40px;"></div>
+                            <div class="toggle max-toggle" style="left:180px;"></div>
+                        </div>
+                        <div class="price-controls">
+                            от
+                            <input class="min-price" type="text" value="1 000"> до
+                            <input class="max-price" type="text" value="3 000">
+                        </div>
+                        <div class="form-btn">
+                            <input type="submit" value="Показать">
+                        </div>
                     </div>
                 </fieldset>
             </form>
-        </div>
-        <!--Сортировка гостиниц ссылками-->
-        <div class="sorting">
-            Найдено:3 сортировка:
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по рейтингу</a>
-            <a class="sort-up" href="#">стрелочка вверх</a>
-            <a class="sort-down" href="#">стрелочка ввниз</a>
-        </div>
-        <div class="listing">
-            <div class="accommodation-item">
-                <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
-                <div class="item-info">
-                    <div class="item-rating">
-                        <span class="stars stars-4">4 звезды</span>
-                        <span class="rating">Рейтинг: 8,5</span>
+            </div>
+            <!--Сортировка гостиниц ссылками-->
+            <div class="sorting">
+                Найдено:3 сортировка:
+                <a href="#">по цене</a>
+                <a href="#">по типу</a>
+                <a href="#">по рейтингу</a>
+                <a class="sort-up" href="#">стрелочка вверх</a>
+                <a class="sort-down" href="#">стрелочка ввниз</a>
+            </div>
+            <div class="listing">
+                <div class="accommodation-item">
+                    <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                    <div class="item-info">
+                        <div class="item-rating">
+                            <span class="stars stars-4">4 звезды</span>
+                            <span class="rating">Рейтинг: 8,5</span>
+                        </div>
+                        <div class="item-name"><a href="#">Amara Resort & Spa</a></div>
+                        <p>Гостиница от 4000 Р.</p>
                     </div>
-                    <div class="item-name"><a href="#">Amara Resort & Spa</a></div>
-                    <p>Гостиница от 4000 Р.</p>
+                    <a class="item-info-btn" href="#">Подробнее</a>
+                    <a class="item-book-btn" href="#">Забронировать</a>
                 </div>
-                <a class="item-info-btn" href="#">Подробнее</a>
-                <a class="item-book-btn" href="#">Забронировать</a>
-            </div>
-            <div class="accommodation-item">
-                <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
-                <div class="item-info">
-                    <div class="item-rating">
-                        <img alt="1" src="http://placehold.it/150x100" title="superb">
-                        <img alt="2" src="http://placehold.it/150x100" title="superb">
-                        <img alt="3" src="http://placehold.it/150x100" title="superb"> Рейтинг: 8,9
+                <div class="accommodation-item">
+                    <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                    <div class="item-info">
+                        <div class="item-rating">
+                            <img alt="1" src="http://placehold.it/150x100" title="superb">
+                            <img alt="2" src="http://placehold.it/150x100" title="superb">
+                            <img alt="3" src="http://placehold.it/150x100" title="superb"> Рейтинг: 8,9
+                        </div>
+                        <div class="item-name"><a href="#">Desert Quail inn</a></div>
+                        <p>Гостиница от 3000 Р.</p>
                     </div>
-                    <div class="item-name"><a href="#">Desert Quail inn</a></div>
-                    <p>Гостиница от 3000 Р.</p>
+                    <a class="item-info-btn" href="#">Подробнее</a>
+                    <a class="item-book-btn" href="#">Забронировать</a>
                 </div>
-                <a class="item-info-btn" href="#">Подробнее</a>
-                <a class="item-book-btn" href="#">Забронировать</a>
-            </div>
-            <div class="accommodation-item">
-                <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
-                <div class="item-info">
-                    <div class="item-rating">
-                        <img alt="1" src="http://placehold.it/150x100" title="superb">
-                        <img alt="2" src="http://placehold.it/150x100" title="superb"> Рейтинг: 9,2
+                <div class="accommodation-item">
+                    <a href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt=""></a>
+                    <div class="item-info">
+                        <div class="item-rating">
+                            <img alt="1" src="http://placehold.it/150x100" title="superb">
+                            <img alt="2" src="http://placehold.it/150x100" title="superb"> Рейтинг: 9,2
+                        </div>
+                        <div class="item-name"><a href="#">Villas at poco diablo</a></div>
+                        <p>Гостиница от 2000 Р.</p>
                     </div>
-                    <div class="item-name"><a href="#">Villas at poco diablo</a></div>
-                    <p>Гостиница от 2000 Р.</p>
+                    <a class="item-info-btn" href="#">Подробнее</a>
+                    <a class="item-book-btn" href="#">Забронировать</a>
                 </div>
-                <a class="item-info-btn" href="#">Подробнее</a>
-                <a class="item-book-btn" href="#">Забронировать</a>
             </div>
         </div>
-    </div>
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-contacts">#vizitsedona
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-contacts">#vizitsedona
+                </div>
+                <div class="footer-social">
+                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+                </div>
+                <div class="footer-copyright">
+                    <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+                </div>
             </div>
-            <div class="footer-social">
-                <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-yt" href="#">Ютуб</a>
-            </div>
-            <div class="footer-copyright">
-                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
