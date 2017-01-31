@@ -85,37 +85,47 @@
         </section>
       <p>Заинтересовались?
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+<!-- корректная структура?-->    
     <button class="search-btn" type="submit" value="search">Поиск гостиницы</button>
       <div class="search-modal">
         <form action="/echo" method="get">
           <fieldset>
             <div class="form-date-in">
               <label for="day-in">Дата заезда</label>
-              <input type="number" min="1" max="31" id="day-in" name="day-in" value="24">
+              <input type="text" min="1" max="31" id="day-in" name="day-in" value="24">
               <label for="month-in"></label>
               <input type="month"  id="month-in" name="month-in" value="2017-04">
             </div>
-<!-- их оборачивать раздельно?-->
+		<!-- их оборачивать раздельно?-->
             <div class="form-date-out">
-              <label for="day-out">Дата заезда</label>
-              <input type="number" min="1" max="31" id="day-out" name="day-out" value="4">
+              <label for="day-out">Дата отъезда</label>
+              <input type="text" min="1" max="31" id="day-out" name="day-out" value="4">
               <label for="month-out"></label>
               <input type="month"  id="month-out" name="month-out" value="2017-07">
             </div>
             <div class="form-human">
               <label for="amount-parents">Взрослые</label>
-              <input type="number" name="amount-parents" id="amount-parents" min="1" max="10" step="1" value="2">
-              <label for="amount-child">Дети</label>
-              <input type="number" name="amount-child" id="amount-child" min="0" max="20" step="1" value="0">
+              <div class="counter">
+              <input type="text" name="amount-parents" id="amount-parents" min="1" max="10" step="1" value="2">
+              
+				</div>            
             </div>
+<!--ничего что два одиннаковых дива с одним классом?-->            
+				<div class="form-human">
+            <label for="amount-child">Дети</label>
+            <div class="counter">
+              <input type="text" name="amount-child" id="amount-child" min="0" max="20" step="1" value="0">
+				</div>
+				</div>          
           </fieldset>
         </form>
       </div>
         <div class="index-map">Карта</div>
+        <div id="map"></div>
     </main>
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-contacts">#vizitsedona
+            <div class="footer-contacts"><p>#vizitsedona</p>
             </div>
             <div class="footer-social">
                 <a class="social-btn social-btn-tw" href="#">Твиттер</a>
