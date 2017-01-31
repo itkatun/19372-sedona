@@ -93,29 +93,28 @@
           <fieldset>
             <div class="form-date-in">
               <label for="day-in">Дата заезда</label>
-              <input type="text" min="1" max="31" id="day-in" name="day-in" value="24">
+              <input type="text" id="day-in" name="day-in" value="24">
               <label for="month-in"></label>
               <input type="month"  id="month-in" name="month-in" value="2017-04">
             </div>
 		<!-- их оборачивать раздельно?-->
             <div class="form-date-out">
               <label for="day-out">Дата отъезда</label>
-              <input type="text" min="1" max="31" id="day-out" name="day-out" value="4">
+              <input type="text"  id="day-out" name="day-out" value="4">
               <label for="month-out"></label>
               <input type="month"  id="month-out" name="month-out" value="2017-07">
             </div>
             <div class="form-human">
               <label for="amount-parents">Взрослые</label>
               <div class="counter">
-              <input type="text" name="amount-parents" id="amount-parents" min="1" max="10" step="1" value="2">
-              
+              <input type="text" name="amount-parents" id="amount-parents"  value="2">
 				</div>            
             </div>
 <!--ничего что два одиннаковых дива с одним классом?-->            
 				<div class="form-human">
             <label for="amount-child">Дети</label>
             <div class="counter">
-              <input type="text" name="amount-child" id="amount-child" min="0" max="20" step="1" value="0">
+              <input type="text" name="amount-child" id="amount-child"  value="0">
 				</div>
 				</div>          
           </fieldset>
