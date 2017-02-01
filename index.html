@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="wrapper">
+    <div class="wrapper">
+        <header class="main-header">
             <nav class="main-navigation">
                 <ul>
                     <li>
@@ -22,14 +22,14 @@
                         <a href="#">карта штата</a>
                     </li>
                     <li>
-                        <a href="#">гостиница</a>
+                        <a href="catalog.html">гостиница</a>
                     </li>
                 </ul>
             </nav>
             <div class="header-logo">
-                <img src="img/logo.png" width="138" height="70" alt="city of «sedona»"><a href="#">Логотип</a>
+                <a href="#"><img src="img/logo.png" width="138" height="70" alt="city of «sedona»"></a>
             </div>
-        </div>
+    
     </header>
     <main class="container">
         <div class="intro">
@@ -39,9 +39,9 @@
             <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </div>
-        <div class="index-banner-item"><b>Настоящий городок</b>
-            <p>- №1-</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="index-banner-item">
+            <h2>Настоящий городок</h2> - №1-
+            <span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
             <img src="img/pic1.jpg" width="800" height="256" alt="Городок">
         </div>
         <section class="features">
@@ -58,62 +58,58 @@
                 <p>Не только китайского, но и местного производства</p>
             </div>
         </section>
-        <!--насчет нижнего блока не уверен , название не нравится и структура-->
-        <div class="index-banner-item"><b>Там есть мост дьявола</b>
-            <p>-2-</p>
+        <div class="index-banner-item">
+            <h2>Там есть мост дьявола</h2> -2-
             <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
             <img src="img/pic2.jpg" width="800" height="256" alt="Каньон">
         </div>
         <section class="features">
             <div class="features-item">
-                <b class="features-name">Небольшая площадь</b>
-                <p>-4-</p>
-                <p>Все достопримечательности находятся очень близко</p>
+                <h2>Небольшая площадь</h2> -4-
+                <span>Все достопримечательности находятся очень близко</span>
             </div>
             <div class="features-item">
-                <b class="features-name">Красивая дорога</b>
-                <p>-5-</p>
-                <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                <h2>Красивая дорога</h2> -5-
+                <span>Ехать в седону из лас-вегаса совсем не скучно!</span>
             </div>
             <div class="features-item">
-                <b class="features-name">Мало туристов</b>
-                <p>Большинство едет в гранд-каньон и толпятся там</p>
+                <h2>Мало туристов</h2> -5-
+                <span>Большинство едет в гранд-каньон и толпятся там</span>
             </div>
         </section>
         <p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="search-btn" type="submit" value="search">Поиск гостиницы</button>
         <div class="search-modal">
             <form action="/echo" method="get">
-                <fieldset>
-                    <div class="form-date-in">
-                        <label for="day-in">Дата заезда</label>
-                        <input type="text" id="day-in" name="day-in" value="24">
-                        <label for="month-in"></label>
-                        <input type="month" id="month-in" name="month-in" value="2017-04">
+                <div class="form-date">
+                    <label for="date-in">Дата заезда</label>
+                    <input type="text" id="date-in" name="day-in" value="24-04-2017">
+                    <button class="calendar"></button>
+                </div>
+                <div class="form-date">
+                    <label for="date-out">Дата отъезда</label>
+                    <input type="text" id="date-out" name="day-out" value="04-07-2017">
+                    <button class="calendar"></button>
+                </div>
+                <div class="form-human">
+                    <label for="amount-parents">Взрослые</label>
+                    <div class="counter">
+                        <button>-</button>
+                        <input type="text" name="amount-parents" id="amount-parents" value="2">
+                        <button>+</button>
                     </div>
-                    <div class="form-date-out">
-                        <label for="day-out">Дата отъезда</label>
-                        <input type="text" id="day-out" name="day-out" value="4">
-                        <label for="month-out"></label>
-                        <input type="month" id="month-out" name="month-out" value="2017-07">
+                </div>
+                <div class="form-human">
+                    <label for="amount-child">Дети</label>
+                    <div class="counter">
+                        <button>-</button>
+                        <input type="text" name="amount-child" id="amount-child" value="0">
+                        <button>+</button>
                     </div>
-                    <div class="form-human">
-                        <label for="amount-parents">Взрослые</label>
-                        <div class="counter">
-                            <input type="text" name="amount-parents" id="amount-parents" value="2">
-                        </div>
-                    </div>
-                    <div class="form-human">
-                        <label for="amount-child">Дети</label>
-                        <div class="counter">
-                            <input type="text" name="amount-child" id="amount-child" value="0">
-                        </div>
-                    </div>
-                </fieldset>
+                </div>
             </form>
         </div>
-        <div class="index-map">Карта</div>
-        <div id="map"></div>
+        <div class="map nojs">Карта</div>
     </main>
     <footer class="main-footer">
         <div class="container">
@@ -130,6 +126,7 @@
             </div>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>

@@ -8,7 +8,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+<div class="wrapper">
+    <header class="main-header">
+    
         <div class="main-navigation">
             <ul>
                 <li>
@@ -26,8 +28,11 @@
             </ul>
         </div>
         <div class="header-logo">
-            <img src="img/logo.png" width="138" height="70" alt="city of «sedona»"><a href="#">Логотип</a>
+            <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="city of «sedona»"></a>
         </div>
+        </div>
+        </header>
+        <main class="container"> <!--одинаковый с index?-->
         <div class="form-item">
             <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
@@ -64,9 +69,9 @@
                             <input class="min-price" type="text" value="1 000"> до
                             <input class="max-price" type="text" value="3 000">
                         </div>
-                        <div class="form-btn">
-                            <input type="submit" value="Показать">
-                        </div>
+                        
+                            <input class="form-btn" type="submit" value="Показать">
+                        
                     </div>
                 </fieldset>
             </form>
@@ -88,7 +93,7 @@
                             <span class="rating">Рейтинг: 8,5</span>
                         </div>
                         <div class="item-name"><a href="#">Amara Resort & Spa</a></div>
-                        <p>Гостиница от 4000 Р.</p>
+                        <div class="item-type"Гостиница</div> <div class="item-price">от 4000 Р.</div> 
                     </div>
                     <a class="item-info-btn" href="#">Подробнее</a>
                     <a class="item-book-btn" href="#">Забронировать</a>
@@ -97,11 +102,11 @@
                     <a href="#"><img src="img/hotels2.jpg" width="135" height="90" alt=""></a>
                     <div class="item-info">
                         <div class="item-rating">
-                            <span class="stars stars-4">4 звезды</span>
+                            <span class="stars stars-3">3 звезды</span>
                             <span class="rating">Рейтинг: 8,9</span> 
                         </div>
                         <div class="item-name"><a href="#">Desert Quail inn</a></div>
-                        <p>Гостиница от 3000 Р.</p>
+                        <div class="item-type"Гостиница</div> <div class="item-price">от 3000 Р.</div> 
                     </div>
                     <a class="item-info-btn" href="#">Подробнее</a>
                     <a class="item-book-btn" href="#">Забронировать</a>
@@ -110,17 +115,17 @@
                     <a href="#"><img src="img/hotels3.jpg" width="135" height="90" alt=""></a>
                     <div class="item-info">
                         <div class="item-rating">
-                            <img alt="1" src="http://placehold.it/150x100" title="superb">
-                            <img alt="2" src="http://placehold.it/150x100" title="superb"> Рейтинг: 9,2
+                            <span class="stars stars-2">2 звезды</span>
+                            <span class="rating">Рейтинг: 9,2</span> 
                         </div>
                         <div class="item-name"><a href="#">Villas at poco diablo</a></div>
-                        <p>Гостиница от 2000 Р.</p>
+                        <div class="item-type"Гостиница</div> <div class="item-price">от 2000 Р.</div> 
                     </div>
                     <a class="item-info-btn" href="#">Подробнее</a>
                     <a class="item-book-btn" href="#">Забронировать</a>
                 </div>
             </div>
-        
+        </main>
         <footer class="main-footer">
             <div class="container">
                 <div class="footer-contacts">#vizitsedona
