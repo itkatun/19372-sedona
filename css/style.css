@@ -106,6 +106,7 @@ h2 {
 
 .main-navigation li {
   outline: 1px dotted orangered;
+  list-style-type: none;
 }
 
 .main-navigation li::before {
