@@ -53,7 +53,10 @@ h2 {
 .main-header {
 
   min-height: 60px;
-  margin-bottom: 80px;
+
+}
+ul {
+	margin:0;
 }
 
 
@@ -97,26 +100,18 @@ h2 {
   outline: 1px dotted orange;
 }
 
-.main-navigation::before {
-  content: '.main-navigation';
-  background-color: orange;
-}
+
 
 .main-navigation li {
   outline: 1px dotted orangered;
   list-style-type: none;
 }
 
-.main-navigation li::before {
-  content: '.menu-item';
-  background-color: orangered;
-  color: black;
-}
 
 .header-logo {
-  background-color: green;
-  min-height: 60px;
-  width: 140px;
+position:absolute;
+	left: 0;
+	right: 0;
   margin-right: auto;
   margin-left: auto;
 }
