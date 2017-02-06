@@ -1,12 +1,10 @@
 body {
-	/*    Почему то в папке не видит шрифт
-  Надо попробовать его установить локально
-        */
-	font-size:14px;
-	line-height:21px;
+
+	font-size:	14px;
+	line-height:	21px;
 	color:#333333;
-	font-weight:normal;
-	font-family: 'PT Sans' Arial,sans-serif;
+	font-weight:	normal;
+	font-family: 'PT Sans', Arial,sans-serif;
 
 
 
