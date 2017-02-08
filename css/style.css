@@ -5,12 +5,9 @@ body {
 	color:#333333;
 	font-weight:	normal;
 	font-family: 'PT Sans', Arial,sans-serif;
-
-
-
-  min-width: 768px;
-  max-width: 1200px;
-  margin: auto;
+	min-width: 768px;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .clearfix::after {
@@ -31,8 +28,6 @@ body {
   line-height: 20px;
   opacity: .7;
 }
-
-
 
 h1 {
 	font-size:21px;
@@ -65,7 +60,7 @@ ul {
 //   min-height: 60px;
 //   padding: 15px 0;
 //   margin: 0 auto;
-//   width: 400px;
+//   width: 30%;
 //   float: left;
 // }
 
@@ -108,7 +103,7 @@ ul {
 }
 
 .header-logo {
-  width:140px;
+  width:11,6%;
   position:absolute;
 	left: 0;
 	right: 0;
@@ -120,7 +115,7 @@ ul {
 
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -132,8 +127,8 @@ ul {
 }
 
 .intro {
-  width: 1200px;
-  height: 533px;
+  width: 100%;
+  height: 533px; /*как считать высоту в % что  брать за 100%*/
   background-image: url('../img/intro_shape.png') , url('../img/bg.png');
   background-repeat: no-repeat;
   background-position: bottom center, bottom center;
