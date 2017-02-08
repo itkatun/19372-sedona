@@ -121,7 +121,7 @@ ul {
 }
 
 .wrapper {
-  
+
   width: 1200px;
   height: 773px;
 }
@@ -139,4 +139,29 @@ ul {
 .intro img {
   display: block;
   margin: 0 auto;
+}
+
+.features-list {
+  width: 100%;
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+counter-reset: features;
+}
+
+
+
+pictured right-item img {
+  position: absolute;
+  top: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.features-item.pictured.right-item {
+    outline: 3px solid gold;
+    position: relative;
+    padding: 50px;
+    padding-right: calc(66.67% + 50px);
+    overflow: hidden;
 }
