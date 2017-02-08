@@ -1,12 +1,10 @@
 body {
-	/*    Почему то в папке не видит шрифт
-  Надо попробовать его установить локально
-        */
-	font-size:14px;
-	line-height:21px;
+
+	font-size:	14px;
+	line-height:	21px;
 	color:#333333;
-	font-weight:normal;
-	font-family: 'PT Sans' Arial,sans-serif;
+	font-weight:	normal;
+	font-family: 'PT Sans', Arial,sans-serif;
 
 
 
@@ -53,9 +51,12 @@ h2 {
 }
 
 .main-header {
-
   min-height: 60px;
-  margin-bottom: 80px;
+
+
+}
+ul {
+	margin:0;
 }
 
 
@@ -99,28 +100,22 @@ h2 {
   outline: 1px dotted orange;
 }
 
-.main-navigation::before {
-  content: '.main-navigation';
-  background-color: orange;
-}
+
 
 .main-navigation li {
   outline: 1px dotted orangered;
-}
-
-.main-navigation li::before {
-  content: '.menu-item';
-  background-color: orangered;
-  color: black;
+  list-style-type: none;
 }
 
 .header-logo {
-  background-color: green;
-  min-height: 60px;
-  width: 140px;
+  width:140px;
+  position:absolute;
+	left: 0;
+	right: 0;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 
 
@@ -131,7 +126,7 @@ h2 {
 }
 
 .wrapper {
-  background: url('../img/bg.png');
+  
   width: 1200px;
   height: 773px;
 }
@@ -139,11 +134,14 @@ h2 {
 .intro {
   width: 1200px;
   height: 533px;
+  background-image: url('../img/intro_shape.png') , url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom center;
+  background-size: 100% 70px, 100% auto ;
+  padding: 80px 0 70px;
 }
 
 .intro img {
   display: block;
-  // margin-top: 75px; почему не отталкиавется от края блока интро
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
