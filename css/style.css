@@ -177,3 +177,30 @@ ul {
 .features-item with icons:last-child{
   margin-right: 0;
 }
+
+.main-footer {
+  outline: 3px dotted green;
+  margin-top: 65px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+}
+
+.footer-contacts{
+  outline: 3px dotted blue;
+  min-height: 50px;
+  float:left;
+  width:11,6%;
+}
+
+.footer-social{
+  outline: 3px dotted blue;
+  min-height: 50px;
+  float:left;
+  width:12%;
+}
+.footer-copyright{
+  outline: 3px dotted blue;
+  min-height: 50px;
+  float:right;
+  width:20%;
+}
