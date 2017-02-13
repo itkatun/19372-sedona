@@ -1,5 +1,4 @@
-body {
-
+    body {
     font-size: 14px;
     line-height: 21px;
     color: #333333;
@@ -8,11 +7,6 @@ body {
     min-width: 768px;
     max-width: 1200px;
     margin: auto;
-
-
-  background: #f2f2f2 url("../sedona-index-1200.jpg") no-repeat 50% 3px;
-
-
 }
 
 .clearfix::after {
@@ -39,7 +33,6 @@ h1 {
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-
     font-family: 'PT Sans', Arial, sans-serif;
 }
 
@@ -57,18 +50,15 @@ h2 {
     /*?  при использовании     margin-bottom: 60px; блок интро уходит в низ от хедера, а должен блок фьючес от интро*/
 }
 
-
-
 ul {
     margin: 0;
 }
 
-
 .main-navigation li {
     width: 20%;
-    padding-top:20px;
-      /* Только для оформления сетки */
-  min-height: 60px;
+    padding-top: 20px;
+    /* Только для оформления сетки */
+    min-height: 60px;
 }
 
 
@@ -109,9 +99,9 @@ ul {
     outline: 1px dotted orangered;
     list-style-type: none;
 }
+
 .main-navigation a {
     text-decoration: none;
-
 }
 
 .header-logo {
@@ -121,28 +111,28 @@ ul {
     right: 0;
     margin-right: auto;
     margin-left: auto;
-      /* Только для оформления сетки */
-  min-height: 60px;
+    /* Только для оформления сетки */
+    min-height: 60px;
 }
 
 .container {
-  width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-  /* Только для оформления сетки */
-  min-height: 60px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* Только для оформления сетки */
+    min-height: 60px;
 }
 
-// .container {
-//     width: 88%;
-//     margin: 0 auto;
-//     padding: 0 10px;
-// }
+/* .container {
+     width: 88%;
+     margin: 0 auto;
+     padding: 0 10px;
+}*/
+
 /*какую ширину для контейнреа оставлять*/
 
 .wrapper {
     width: 1200px;
-    height: 2777px;
 }
 
 .intro {
@@ -165,10 +155,12 @@ ul {
 .features h1 {
     text-align: center;
 }
+
 .features p {
     font-size: 14px;
     line-height: 26px;
-    color: #333333; /*на макете серый? почему*/
+    color: #333333;
+    /*на макете серый? почему*/
     font-weight: normal;
     font-family: 'PT Sans', Arial, sans-serif;
 }
@@ -176,80 +168,65 @@ ul {
 .features-list {
     outline: 3px solid gold;
     width: 100%;
-
 }
 
-.features-item-pictured{
+.features-item-pictured {
     outline: 3px dotted oranged;
     min-width: 66.66%;
-    float:right;
-     /* Только для оформления сетки */
+    float: right;
+    /* Только для оформления сетки */
     min-height: 260px;
-
-
 }
 
-.features-item{
+.features-item {
     outline: 3px dotted gold;
     min-width: 33.33%;
-    float:left;
-     /* Только для оформления сетки */
+    float: left;
+    /* Только для оформления сетки */
     min-height: 260px;
-
-
 }
-.features-item-icons{
-     outline: 3px solid green;
-      min-width: 33.33%;
-        float:left;
-        margin-right: 5px;
-      /* Только для оформления сетки */
+
+.features-item-icons {
+    outline: 3px solid green;
+    min-width: 33.33%;
+    float: left;
+    margin-right: 5px;
+    /* Только для оформления сетки */
     min-height: 330px;
-
-
 }
-.features-item-icons:last-child{
-  margin-right: 0;
-  float:right;
+
+.features-item-icons:last-child {
+    margin-right: 0;
+    float: right;
 }
 
 .main-footer {
-  outline: 3px dotted green;
-  margin-top: 65px;
-  padding-top: 10px;
-  padding-bottom: 35px;
+    outline: 3px dotted green;
+    margin-top: 65px;
+    padding-top: 10px;
+    padding-bottom: 35px;
 }
 
-.footer-contacts{
-  outline: 3px dotted blue;
-  min-height: 50px;
-  float:left;
-  width:11,6%;
+.footer-contacts {
+    outline: 3px dotted blue;
+    min-height: 50px;
+    float: left;
+    width: 11, 6%;
 }
 
-.footer-social{
-  outline: 3px dotted blue;
-  min-height: 50px;
-  float:left;
-  width:12%;
-}
-.footer-copyright{
-  outline: 3px dotted blue;
-  min-height: 50px;
-  float:right;
-  width:20%;
+.footer-social {
+    outline: 3px dotted blue;
+    min-height: 50px;
+    float: left;
+    width: 12%;
 }
 
-
-
-
-
-
-
-
-
-
-
+.footer-copyright {
+    outline: 3px dotted blue;
+    min-height: 50px;
+    float: right;
+    width: 20%;
+}
 
 
 /*======================================
@@ -257,87 +234,77 @@ ul {
 =======================================*/
 
 body {
-  padding: 3px;
+    padding: 3px;
 }
 
 body > *,
 body > * > *,
 body > * > * > * {
-  position: relative;
+    position: relative;
 }
 
 body > *::before,
 body > * > *::before,
 body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
+    content: "";
+    position: absolute;
+    height: 24px;
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
 }
 
 body > *::before {
-  top: -3px;
-  left: -3px;
+    top: -3px;
+    left: -3px;
 }
 
 body > * > *::before {
-  top: -3px;
-  left: -3px;
+    top: -3px;
+    left: -3px;
 }
 
 body > * > * > *::before {
-  top: 0;
-  left: 0;
+    top: 0;
+    left: 0;
 }
 
 body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
 
 body > *::before {
-  color: white;
-
-  background: green;
+    color: white;
+    background: green;
 }
 
 .main-header::before {
-  content: ".main-header";
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.header-logo::before {
-  content: ".header-logo";
-}
-
-.features::before {
-  content: ".features";
-  top: -28px;
-}
-
-.features-list::before {
-  content: ".features-list";
-}
-
-.features-item::before {
-  content: ".features-item";
-}
->>>>>>> origin/master
+    content: ".main-header";
+    .container::before {
+        content: ".container";
+    }
+    .main-header .container::before {
+        top: auto;
+        bottom: -28px;
+    }
+    .main-navigation::before {
+        content: ".main-navigation";
+    }
+    .header-logo::before {
+        content: ".header-logo";
+    }
+    .features::before {
+        content: ".features";
+        top: -28px;
+    }
+    .features-list::before {
+        content: ".features-list";
+    }
+    .features-item::before {
+        content: ".features-item";
+    }
+    >>>>>>> origin/master
