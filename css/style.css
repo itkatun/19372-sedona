@@ -105,7 +105,7 @@ ul {
 }
 
 .header-logo {
-    width: 12%;
+    width: 145px;
     position: absolute;
     left: 0;
     right: 0;
@@ -115,13 +115,13 @@ ul {
     min-height: 60px;
 }
 
-.container {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-    /* Только для оформления сетки */
-    min-height: 60px;
-}
+// .container {
+//     width: 100%;
+//     padding: 0 10px;
+//     margin: 0 auto;
+//     /* Только для оформления сетки */
+//     min-height: 60px;
+// }
 
 /* .container {
      width: 88%;
@@ -229,82 +229,3 @@ ul {
 }
 
 
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-
-body {
-    padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-    position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-    content: "";
-    position: absolute;
-    height: 24px;
-    padding: 2px 5px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Courier New", monotype;
-    white-space: nowrap;
-}
-
-body > *::before {
-    top: -3px;
-    left: -3px;
-}
-
-body > * > *::before {
-    top: -3px;
-    left: -3px;
-}
-
-body > * > * > *::before {
-    top: 0;
-    left: 0;
-}
-
-body > * {
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-    color: white;
-    background: green;
-}
-
-.main-header::before {
-    content: ".main-header";
-    .container::before {
-        content: ".container";
-    }
-    .main-header .container::before {
-        top: auto;
-        bottom: -28px;
-    }
-    .main-navigation::before {
-        content: ".main-navigation";
-    }
-    .header-logo::before {
-        content: ".header-logo";
-    }
-    .features::before {
-        content: ".features";
-        top: -28px;
-    }
-    .features-list::before {
-        content: ".features-list";
-    }
-    .features-item::before {
-        content: ".features-item";
-    }
-    >>>>>>> origin/master
