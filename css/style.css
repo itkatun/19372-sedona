@@ -47,7 +47,6 @@ h2 {
 .main-header {
     min-height: 60px;
     margin-bottom: 2px;
-    /*?  при использовании     margin-bottom: 60px; блок интро уходит в низ от хедера, а должен блок фьючес от интро*/
 }
 
 ul {
@@ -57,8 +56,7 @@ ul {
 .main-navigation li {
     width: 20%;
     padding-top: 20px;
-    /* Только для оформления сетки */
-    min-height: 60px;
+
 }
 
 
@@ -109,36 +107,21 @@ ul {
     position: absolute;
     left: 0;
     right: 0;
+    top:0;
     margin-right: auto;
     margin-left: auto;
-    /* Только для оформления сетки */
-    min-height: 60px;
+
 }
 
-// .container {
-//     width: 100%;
-//     padding: 0 10px;
-//     margin: 0 auto;
-//     /* Только для оформления сетки */
-//     min-height: 60px;
-// }
-
-/* .container {
-     width: 88%;
-     margin: 0 auto;
-     padding: 0 10px;
-}*/
-
-/*какую ширину для контейнреа оставлять*/
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 768px; 
 }
 
 .intro {
     width: 100%;
     height: 533px;
-    /*как считать высоту в % что  брать за 100%*/
     background-image: url('../img/intro_shape.png'), url('../img/bg.png');
     background-repeat: no-repeat;
     background-position: bottom center, bottom center;
@@ -160,7 +143,6 @@ ul {
     font-size: 14px;
     line-height: 26px;
     color: #333333;
-    /*на макете серый? почему*/
     font-weight: normal;
     font-family: 'PT Sans', Arial, sans-serif;
 }
@@ -174,16 +156,14 @@ ul {
     outline: 3px dotted oranged;
     min-width: 66.66%;
     float: right;
-    /* Только для оформления сетки */
-    min-height: 260px;
+
 }
 
 .features-item {
     outline: 3px dotted gold;
     min-width: 33.33%;
     float: left;
-    /* Только для оформления сетки */
-    min-height: 260px;
+
 }
 
 .features-item-icons {
@@ -191,8 +171,7 @@ ul {
     min-width: 33.33%;
     float: left;
     margin-right: 5px;
-    /* Только для оформления сетки */
-    min-height: 330px;
+
 }
 
 .features-item-icons:last-child {
